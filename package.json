@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/ignaces/chilean-rut-serie-checker#readme",
   "dependencies": {
+    "express": "^4.16.2",
+    "body-parser": "*",
     "puppeteer": "git+https://github.com/GoogleChrome/puppeteer.git"
   }
 }
