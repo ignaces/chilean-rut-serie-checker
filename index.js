@@ -21,5 +21,5 @@ app.get('/api/validate', async (req, res, next) => {
   }
 })
 
-app.listen(1938);
+app.listen(process.env.PORT || 1938)
 console.log('Running on port 1938...');
