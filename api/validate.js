@@ -33,11 +33,15 @@ async function run(username, serie, type) {
       return element? element.innerHTML: null;
     }, RESULT_SELECTOR);
 
-  return result;
+  return obj = {
+      status: (result == "Vigente" ? true : false),
+      message: result
+  };
 }
 
 module.exports.validateByUsernameAndSerie = (username, serie, type) => {
-  return run(username, serie, type)
+  let data = run(username, serie, type);
+  return data;
 }
 
 
