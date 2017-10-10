@@ -1,8 +1,14 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 const app = express();
 
+
 app.use(bodyParser.json());
+  app.use(compression({
+    // Compress everything over 10 bytes
+    threshold: 10,
+  }));
 
 Validate = require('./api/validate');
 
