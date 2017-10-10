@@ -27,12 +27,14 @@ $ node index.js
 ***GET api/validate***
 
 Query strings:
+
     serie: *document serie*
     username: *identity number*
     type: *identity type*
-
+    
 Example response:
     200 OK
+    
     {
         "status": false,
         "message": "Vigente"
