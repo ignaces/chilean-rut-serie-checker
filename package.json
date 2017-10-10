@@ -1,0 +1,22 @@
+{
+  "name": "chilean-rut-serie-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignaces/chilean-rut-serie-checker.git"
+  },
+  "author": "Ignacio Trujillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ignaces/chilean-rut-serie-checker/issues"
+  },
+  "homepage": "https://github.com/ignaces/chilean-rut-serie-checker#readme",
+  "dependencies": {
+    "puppeteer": "git+https://github.com/GoogleChrome/puppeteer.git"
+  }
+}
