@@ -35,6 +35,8 @@ async function run(username, serie, type) {
       return element? element.innerHTML: null;
     }, RESULT_SELECTOR);
 
+  await browser.close(); // ups!
+
   return obj = {
       status: (result == "Vigente" ? true : false),
       message: result
