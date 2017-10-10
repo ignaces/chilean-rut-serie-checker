@@ -6,10 +6,16 @@ app.use(bodyParser.json());
 
 Validate = require('./api/validate');
 
-app.get('/api/validate/:username/:serie/:type', async (req, res, next) => {
+app.get('/api/validate', async (req, res, next) => {
   try {
-    const result = await Validate.validateByUsernameAndSerie(req.params.username, req.params.serie, req.params.type);
+
+    let username = req.query.username;
+    let serie = req.query.serie;
+    let type = req.query.type;
+
+    const result = await Validate.validateByUsernameAndSerie(username, serie, type);
     res.json(result);
+
   } catch (e) {
     next(e);
   }
