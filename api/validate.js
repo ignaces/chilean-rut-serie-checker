@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 
 async function run(username, serie, type) {
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     ignoreHTTPSErrors: true,
     args: ['--disable-gpu', '--no-sandbox', '--disable-setuid-sandbox']
   });
